@@ -1,0 +1,31 @@
+.selectContainer{
+  text-align: center;
+  .selectWrapper{
+    width: 300px;
+    text-align: left;
+    display: inline-block;
+    color: #2d2d2d;
+    .choiceWrapper{
+      border-top: #ebebeb solid 1px;
+      min-height: 40px;
+      padding: 10px 0 0 3px;
+      line-height: 22px;
+      .choiceName{
+        color: #2d2d2d;
+      }
+
+      &:hover{
+        background: rgba(0, 136, 204, 0.3);
+
+      }
+    }
+    .part{
+      margin-bottom: 7px;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+    h1{
+      margin-bottom: 15px;
+    }
+  }
+}

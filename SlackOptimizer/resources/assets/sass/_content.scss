@@ -1,0 +1,158 @@
+
+.welcome{
+  height: 100vh;
+  width: 100vw;
+  color: #242628;
+  text-align: center;
+  display:table-cell;
+  vertical-align:middle;
+  .firstLine{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .secondLine{
+    font-size: 24px;
+  }
+}
+
+.sideBarIcon{
+  z-index: 1;
+  position: absolute;
+  left: 10px;
+  top:10px;
+  color:#30292f;
+  height:20px;
+  width: 30px;
+
+
+}
+.content {
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 250px;
+
+  .userInfo {
+    width: 100%;
+    height: 65px;
+    padding: 15px 0 0 48px;
+    border-bottom: solid 1px #e0e0e0;
+    #labelSendTo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2d2d2d;
+    }
+    .fullName {
+      margin: 5px 0 10px 0;
+      font-size: 13px;
+      color: #2d2d2d;
+    }
+  }
+  .historyMessages{
+    overflow-y: auto;
+    height: calc(100% - 112px);
+    position: absolute;
+    width: calc(100% - 298px);
+    margin-left:48px;
+    .otherMessages{
+      text-align: center;
+      margin: 5px 0 9px -96px;
+      font-style: italic;
+    }
+    .userName{
+      font-weight: bold;
+      display: inline;
+      color: #2d2d2d;
+    }
+    .messageTime{
+      display: inline;
+      color: #a5a5a5;
+    }
+    .message{
+      margin: 10px 0 20px 0;
+      padding-right: 75px;
+      word-wrap: break-word;
+      .messageUsername,.messageLink{
+        color: #1993d1;
+      }
+    }
+  }
+
+  .sendWrapper{
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    bottom: 8px;
+    //right: 200px;
+    left:0;
+    padding-left: 290px;
+    padding-right: 40px;
+    .newMessage{
+      float: left;
+      height: 100%;
+      width: 90%;
+      //margin:  0 1% 0 1%;
+      padding: 7px;
+      //font-size: 16px;
+      line-height: 19px;
+
+    }
+    .sendMessage{
+      float: left;
+      //margin: 3px 0 4px 0;
+      //padding: 6px 31px 6px 31px;
+      //position: absolute;
+      //top:0;
+      //right: 25px;
+      height: 100%;
+      width: 10%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .sideBar{
+
+    visibility: hidden;
+  }
+  .content{
+    padding-left: 0;
+    .sideBarMask{
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      visibility: hidden;
+    }
+    .userInfo{
+      text-align: center;
+      padding-left: 0;
+
+    }
+    .historyMessages{
+      width: 100%;
+
+    }
+
+    .sendWrapper{
+      padding-left: 10px;
+      padding-right: 10px;
+      .newMessage{
+        width: 80%;
+      }
+      .sendMessage{
+
+        width: 20%;
+      }
+    }
+
+
+  }
+}

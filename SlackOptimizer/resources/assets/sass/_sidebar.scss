@@ -1,0 +1,56 @@
+.sideBar{
+  z-index: 2;
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background-color: #30292f;
+  top:0;
+  left: 0;
+  color: #9f9f9f;
+  overflow-y: auto;
+  .info{
+    font-size: 16px;
+    margin: 10px 0 8px 14px;
+    .teamName{
+      color: white;
+      font-size: 22px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  .section{
+    padding: 14px;
+    font-size: 16px;
+    .plus{
+      float: right;
+      display: block;
+      height: 16px;
+      width: 16px;
+      line-height: 14px;
+      border-radius: 50%;
+      border: #9c9c9c solid 2px;
+      //background-color: black;
+      color: #9f9f9f;
+      text-align: center;
+
+    }
+
+  }
+  //.channels{
+  //  font-size: 16px;
+  //  margin: 0 0 0 34px;
+  //  cursor: pointer;
+  //  a{
+  //    color:#9f9f9f;
+  //    text-decoration: none;
+  //  }
+  //
+  //}
+}
+.links{
+  color:#9f9f9f;
+  text-decoration: none;
+  display: block;
+}

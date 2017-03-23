@@ -1,0 +1,49 @@
+
+@import "sendForm";
+@import "showMessages";
+@import "sidebar";
+@import "content";
+@import "select";
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  font-family:  Arial;
+
+
+}
+.logout{
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 18px;
+
+}
+.container{
+  text-align: center;
+  .wrapper{
+    margin-top: 1%;
+    display: inline-block;
+    text-align: left;
+    .submit{
+      height: 25px;
+      width: 75px;
+      margin-top: 7px;
+      margin-bottom: 10px;
+    }
+    .alignRight{
+      float: right;
+    }
+    input{
+      margin: 0;
+    }
+  }
+}
+.error{
+  display: inline-block;
+  font-size: 14px;
+  color:#EF4836;
+}
